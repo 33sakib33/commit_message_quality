@@ -1,0 +1,59 @@
+url,original_message,message,original_label,is_good,is_bad,binary_label,model_classification
+https://github.com/junit-team/junit4/commit/1254795902e56eb545e1fe696827924bc5e82b66,"Mark ThreadGroups created by FailOnTimeout as daemon groups (#1687) 
+  
+ Mark ThreadGroup created by FailOnTimeout as a daemon group. 
+  
+ Previously, FailOnTimeout destroyed the ThreadGroup, which could cause race conditions if the ThreadGroup was referenced by other threads. 
+  
+ Fixes #1652","Mark ThreadGroups created by FailOnTimeout as daemon groups
+Mark ThreadGroup created by FailOnTimeout as a daemon group.
+Previously, FailOnTimeout destroyed the ThreadGroup, which could cause race conditions if the ThreadGroup was referenced by other threads.",Why and What,True,False,1.0,why and what
+https://github.com/junit-team/junit4/commit/435d41f0d45cfdbc1a38e1ad4eb1d5300da533f9,"Use Google's Maven Central mirror 
+  
+ We are using Maven 3.1.1 which by default uses HTTP instead of HTTPS for 
+ resolving artifacts from Maven Central. Maven Central recently 
+ discontinued HTTP support. Therefore the build on Travis started 
+ failing. By using an HTTPS mirror of Maven Central the build on Travis 
+ will work again. 
+  
+ I chose Google's mirror because Travis uses this mirror by default, too. 
+ I did not upgrade to a new version of Maven because there is no newer 
+ version with Java 5 support and it should be possible to build JUnit 4 
+ with Java 5 so that we can easily ensure that it works with Java 5.","Use Google's Maven Central mirror
+We are using Maven 3.1.1 which by default uses HTTP instead of HTTPS for
+resolving artifacts from Maven Central. Maven Central recently
+discontinued HTTP support. Therefore the build on Travis started
+failing. By using an HTTPS mirror of Maven Central the build on Travis
+will work again.
+I chose Google's mirror because Travis uses this mirror by default, too.
+I did not upgrade to a new version of Maven because there is no newer
+version with Java 5 support and it should be possible to build JUnit 4
+with Java 5 so that we can easily ensure that it works with Java 5.",Why and What,True,False,1.0,"""why and what"""
+https://github.com/junit-team/junit4/commit/6c5de817e7e0afdd4d09354693535520712595fc,Remove reference to obsolete mailing list,Remove reference to obsolete mailing list,No Why,False,False,,no why
+https://github.com/junit-team/junit4/commit/467c3f8efe1a87e3029df282e4df60ad98bc4142,"Deprecate Assert#assertThat 
+  
+ The method 'assertThat' is used for writing assertions with Hamcrest. 
+ Hamcrest is an independent assertion library and contains an own 
+ 'assertThat' method in the class 'org.hamcrest.MatcherAssert'. It is 
+ available both in the old Hamcrest 1.3 release and in the current 
+ Hamcrest 2.1. Therefore the JUnit team recommends to use Hamcrest's own 
+ 'assertThat' directly.","Deprecate Assert#assertThat
+The method 'assertThat' is used for writing assertions with Hamcrest.
+Hamcrest is an independent assertion library and contains an own
+'assertThat' method in the class 'org.hamcrest.MatcherAssert'. It is
+available both in the old Hamcrest 1.3 release and in the current
+Hamcrest 2.1. Therefore the JUnit team recommends to use Hamcrest's own
+'assertThat' directly.",Why and What,True,False,1.0,no why
+https://github.com/junit-team/junit4/commit/8a367c1b918f02135d333f3cea8b576c20287361,"Revert 'ExternalResource: declare after() to throw Throwable (#1421)' 
+  
+ Revert commit cebbf5e15725b4dc247ac0557f6fa63f475b15af. 
+ It breaks code that extends ExternalResource, 
+ overrides after() and calls super.after() in after().","Revert 'ExternalResource: declare after() to throw Throwable (#1421)'
+Revert commit cebbf5e15725b4dc247ac0557f6fa63f475b15af.
+It breaks code that extends ExternalResource,
+overrides after() and calls super.after() in after().",Why and What,False,False,,no why
+https://github.com/junit-team/junit4/commit/37610e67f77db2f238e7fde2c36f1f0d180790b1,spelling: unwieldy,spelling: unwieldy,Why and What,False,True,0.0,no why
+https://github.com/junit-team/junit4/commit/b9a1291cd0e72b0ba1babfd330a0148ab3d42b27,spelling: methods,spelling: methods,Why and What,False,True,0.0,no why
+https://github.com/junit-team/junit4/commit/a5e71079e26cfa282a36b1eab806f596bc20a949,spelling: builder,spelling: builder,Why and What,False,True,0.0,no why
+https://github.com/junit-team/junit4/commit/2101dad6cf8fcd94d351f65cf28812ec527d7bf5,spelling: assert,spelling: assert,Why and What,False,True,0.0,no why
+https://github.com/junit-team/junit4/commit/039dbd17447bd7bb5b4d0f7861d87b5c22703832,style: remove space,style: remove space,Why and What,False,True,0.0,no why
